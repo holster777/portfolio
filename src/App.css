@@ -1,0 +1,598 @@
+/* Global Styles */
+
+.content {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  scroll-snap-align: start;
+}
+
+#intro {
+  background-color: rgb(245, 242, 242);
+
+}
+
+
+#about {
+  background-color:#dcc4e4;
+}
+
+
+#experience {
+  background-color:#333333;
+  color: white;
+}
+
+#services {
+  background-color:#8015a4e2;
+  color: white;
+
+}
+
+#testimonials {
+  background-color: #333333;
+  color: white;
+}
+
+#contact {
+  
+  background-color:#dcc4e4;
+
+}
+
+/* Font imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+@import url('//db.onlinewebfonts.com/c/88f10bf18a36407ef36bf30bc25a3618?family=Suisse+Intl');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+@font-face {font-family: "Suisse Intl"; src: url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.eot"); src: url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.woff") format("woff"), url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.svg#Suisse Intl") format("svg"); }
+
+
+
+/* Font Styles */
+
+h1 {
+  font-family: 'DM Serif Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 75px;
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+}
+
+h2 {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+}
+
+h3 {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+
+}
+
+p {
+  font-family: 'Suisse Intl';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  text-align:justify;
+
+}
+
+
+
+a {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+
+
+
+/* Top Nav Styling */
+
+.logo {
+  width: 20vw;
+  margin-left: 2rem;
+}
+
+
+.navbar {
+  display: flex;
+  height: 10vh;
+  width: 100vw;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  top:0;
+  padding: 1rem 0;
+  position: fixed;
+}
+
+.navbar-active {
+  display: flex;
+  height: 10vh;
+  width: 100vw;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  top:0;
+  padding: 1rem 0;
+  position: fixed;
+  background-color: black;
+
+}
+
+
+.navbar a {
+  margin: 0 2rem;
+  padding-top: 5px;
+  padding-bottom: 5px
+}
+
+
+.navbar a:hover {
+  border-bottom: solid 2px black ;
+
+}
+
+.green-button {
+font-family: 'Roboto Mono';
+text-transform: uppercase;
+letter-spacing: 0.1em;
+width: 222px;
+height: 40px;
+background: black;
+color: white;
+padding: 10px 30px;
+border: none;
+}
+
+
+.green-button:hover {
+  background: black;
+  transition: 0.4s ease-in;
+}
+
+
+/* Social Nav Styling */ 
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.icon svg {
+  height: 1.5rem;
+}
+
+.social-nav {
+  width: 5vw;
+  height: 40vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 10;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  
+}
+
+.line {
+  width: 2px;
+  height: 200px;
+  background-color: black;
+}
+
+/* Homepage Styling */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 60vw;
+  margin: 0 auto;
+ 
+}
+
+.signature-flex {
+  display:flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.signature {
+  width: 20vw !important;
+}
+
+.mg-top {
+  margin-top: 6rem;
+}
+
+
+/* Dark Mode Toggle */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 24px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.toggle {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+/* About Page Styling */
+
+.hollie {
+  width: 24vw;
+  margin-right: 2rem;
+}
+
+
+.row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.about-box {
+  margin-top: 1.2rem;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.margin-right {
+  margin-right: 1rem;
+}
+
+
+
+/* Skills Styling */
+
+.underline {
+  border-bottom: 1.5px solid white;
+  line-height: 2rem;
+  width: 100%;
+}
+
+.row-spaced {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: auto 0;
+  width: 100%;
+  height: 100%;
+}
+
+.skills {
+  border: solid 1.5px white;
+  padding: 1.5rem 2rem;
+}
+
+.skill-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+}
+
+.skill-box p {
+  padding-right: 10px;
+  padding-bottom: 5px;
+  font-family: 'Roboto Mono'
+}
+
+.margin-top {
+  margin-top: 1rem;
+}
+
+.row-gap {
+  display:flex;
+  flex-direction: row;
+  gap:2.5rem;
+}
+
+.services {
+  min-width: 30%;
+}
+
+
+/*-----------about-------------*/
+/*-----------portfolio-------------*/
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+
+
+.headerContainer {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+.flexSB {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 20px;
+  align-content: center;
+}
+
+.grid-overflow {
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+  
+}
+
+.portfolio h1 {
+  font-size: 30px;
+}
+
+.portfolio li {
+  margin-left: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 5px 15px;
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.portfolio li:hover,
+.portfolio li.active {
+  background: #000;
+  color: #fff;
+  padding: 5px 15px;
+}
+.portfolio img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+
+.portfolio .box {
+  position: relative;
+  min-width: 32%;
+  max-width: 32%;
+}
+
+.grid::-webkit-scrollbar {
+  display:none
+  
+}
+
+
+.grid::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+
+.portfolio .overlay h1 {
+  margin: 0;
+  font-size: 20px;
+}
+.portfolio .overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: rgba(39, 36, 36, 0.65);
+  color: white;
+  z-index: 1;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.text {
+  margin: 2rem;
+
+}
+
+
+.portfolio .overlay h1 {
+  font-size: 1.2rem;
+  font-family: 'Roboto Mono';
+  line-height: 1.4em;
+  margin-bottom: 0;
+  
+}
+
+.portfolio .overlay p {
+  font-family: 'Roboto Mono';
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0;
+  line-height: 1.2em;
+  
+
+}
+
+
+.portfolio .box:hover .overlay {
+  opacity: 1;
+}
+
+/* Testimonials */
+
+.carousel {
+  display:flex;
+  overflow:hidden;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+
+.carousel-item {
+ min-width: 100%;
+ margin-bottom: 0;
+}
+
+
+.testimonial-img {
+width: 10vw;
+margin-right: 2rem;
+}
+
+.top-row {
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+
+.control-box {
+  display: flex;
+  max-width: 100%;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.carousel-control {
+  display: flex;
+  font-size: 3rem;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  color: white;
+  line-height:0;
+}
+
+.left {
+  margin-right: 2rem;
+}
+
+.right {
+  margin-left: 2rem;
+}
